@@ -6,6 +6,6 @@ import javax.inject.Inject
 
 class TweetRepositoryImpl @Inject constructor(private val dataSource: TweetDataSource): TweetRepository {
     override fun uploadTweet() {
-        dataSource.testWriteTweet()
+        dataSource.writeTweet()
     }
 }
